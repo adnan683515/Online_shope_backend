@@ -83,24 +83,25 @@ MIDDLEWARE = [
 
 ]
 
-CORS_ALLOW_CREDENTIALS = True
 
-SESSION_COOKIE_SAMESITE = None
-CSRF_COOKIE_SAMESITE = None
+
+
 CSRF_TRUSTED_ORIGINS = [
     # "https://sandbox.sslcommerz.com",
     "https://online-shope-backend.vercel.app/",
+    "http://online-shope-front-end.vercel.app/",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
 
 CORS_ALLOWED_ORIGINS = [
-    'https://adnan683515.github.io/Online_shope_front_end',
-    'http://online-shope-front-end.vercel.app',
-    'http://127.0.0.1:5000',
-    'http://127.0.0.1:8000'
+    'https://adnan683515.github.io/Online_shope_front_end/',
+    'http://online-shope-front-end.vercel.app/',
+    'http://127.0.0.1:5000/',
+    'http://127.0.0.1:8000/'
 ]
+CORS_ALLOW_CREDENTIALS = True
 # settings.py
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',

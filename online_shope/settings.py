@@ -83,11 +83,12 @@ MIDDLEWARE = [
 
 ]
 
-# SESSION_COOKIE_SAMESITE = None
-# CSRF_COOKIE_SAMESITE = None
-# CSRF_TRUSTED_ORIGINS = [
-#     "https://sandbox.sslcommerz.com",
-# ]
+SESSION_COOKIE_SAMESITE = None
+CSRF_COOKIE_SAMESITE = None
+CSRF_TRUSTED_ORIGINS = [
+    # "https://sandbox.sslcommerz.com",
+    "https://online-shope-backend.vercel.app/",
+]
 
 CORS_ALLOW_ALL_ORIGINS = True
 

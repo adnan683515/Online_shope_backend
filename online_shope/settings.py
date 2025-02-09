@@ -95,6 +95,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
     'https://adnan683515.github.io/Online_shope_front_end',
+    'http://online-shope-front-end.vercel.app',
     'http://127.0.0.1:5000',
     'http://127.0.0.1:8000'
 ]

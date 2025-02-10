@@ -7,7 +7,7 @@ class football_serializer(serializers.ModelSerializer):
     football_cetagory = serializers.CharField(read_only=True)
     class Meta:
         model = Product
-        exclude = ['Movement_Watch','warenty_watch','size']
+        exclude = ['Movement_Watch','warenty','size']
     
     
 class versionSerailizer(serializers.ModelSerializer):
@@ -60,7 +60,7 @@ class FootballSerializer(serializers.ModelSerializer):
     size = SizeSerializer()
     class Meta:
         model = Product
-        fields = ['id','product_title','cetagory','type_your_product','version','sports_Type','display_image','font_image','quantity','range_of_price','fixed_price','colour','country','description','abailable','size', 'eyes','warenty_watch','Brand']
+        fields = ['id','product_title','cetagory','type_your_product','version','sports_Type','display_image','font_image','quantity','range_of_price','fixed_price','colour','country','description','abailable','size', 'eyes','warenty','Brand']
         
 class JurseySerializer(serializers.ModelSerializer):
     colour = serializers.CharField(read_only=True)
